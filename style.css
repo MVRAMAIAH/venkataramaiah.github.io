@@ -50,12 +50,10 @@ body {
     text-decoration: none;
     letter-spacing: 2px;
     transition: all 0.3s ease;
-    text-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
 }
 
 .nav-logo:hover {
     color: var(--hover-accent);
-    text-shadow: 0 0 15px rgba(29, 78, 216, 0.4);
     transform: scale(1.05);
 }
 
@@ -88,7 +86,6 @@ body {
     background: linear-gradient(90deg, var(--accent), var(--hover-accent));
     transition: width 0.3s ease;
     border-radius: 2px;
-    box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
 }
 
 .nav-links a:hover {
