@@ -46,7 +46,7 @@
     <section id="about" class="about-section">
         <div class="section-container">
             <div class="section-header scroll-reveal">
-                <h2 class="section-title">Deeper About Me</h2>
+                <h2 class="section-title">More About Me</h2>
             </div>
             
             <div class="about-content">
@@ -96,14 +96,10 @@
                     <div class="focus-section card scroll-reveal" style="transition-delay: 0.2s;">
                         <h3 class="card-title">Current Focus</h3>
                         <ul class="focus-list">
-                            <li>
-                                <span class="focus-icon">🧠</span>
+                            <li style="display: list-item; margin-left: 1.5rem; margin-bottom: 0.8rem;">
                                 <p>Learning Machine Learning deeper</p>
                             </li>
-                            <li class="leetcode-stats-item" style="align-items: flex-start;">
-                                <span class="focus-icon" style="margin-top: 5px;">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 24px; filter: invert(0.8) sepia(1) saturate(5) hue-rotate(320deg);">
-                                </span>
+                            <li class="leetcode-stats-item" style="display: list-item; margin-left: 1.5rem; margin-bottom: 0.8rem; align-items: flex-start;">
                                 <div class="leetcode-info" style="width: 100%;">
                                     <p style="margin-bottom: 8px;"><a href="https://leetcode.com/u/fb1dKeCGeH/" target="_blank" style="color: var(--text-primary); text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-primary)'">LeetCode Problem Solving ↗</a></p>
                                     <div class="lc-progress-container">
@@ -116,8 +112,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <span class="focus-icon">🚀</span>
+                            <li style="display: list-item; margin-left: 1.5rem; margin-bottom: 0.8rem;">
                                 <p>Getting ready to get launched into a software company</p>
                             </li>
                         </ul>
@@ -128,6 +123,7 @@
     </section>
 
     <section id="certificates" class="certificates-section">
+        <hr class="section-divider" style="width: 80%; margin: 0 auto; border: 0; height: 1px; background: rgba(255, 255, 255, 0.5);">
         <div class="section-container">
             <div class="section-header scroll-reveal">
                 <h2 class="section-title">Certificates</h2>
@@ -186,22 +182,23 @@
     </section>
 
     <section id="skills" class="skills-section">
+        <hr class="section-divider" style="width: 80%; margin: 0 auto; border: 0; height: 1px; background: rgba(255, 255, 255, 0.5);">
         <div class="section-container">
             <div class="section-header scroll-reveal">
                 <h2 class="section-title">Technical Skills</h2>
             </div>
             
-            <div class="skills-content scroll-reveal">
-                <div class="skills-category card">
-                    <h3 class="card-title">Programming</h3>
+            <div class="skills-content card scroll-reveal" style="display: flex; flex-direction: column; gap: 2rem; padding: 2rem;">
+                <div class="skills-category">
+                    <h3 class="card-title" style="margin-bottom: 1rem;">Programming</h3>
                     <div class="skills-tags">
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">JavaScript</span>
                     </div>
                 </div>
                 
-                <div class="skills-category card">
-                    <h3 class="card-title">Web</h3>
+                <div class="skills-category">
+                    <h3 class="card-title" style="margin-bottom: 1rem;">Web</h3>
                     <div class="skills-tags">
                         <span class="skill-tag">HTML</span>
                         <span class="skill-tag">CSS</span>
@@ -210,16 +207,16 @@
                     </div>
                 </div>
                 
-                <div class="skills-category card">
-                    <h3 class="card-title">Machine Learning</h3>
+                <div class="skills-category">
+                    <h3 class="card-title" style="margin-bottom: 1rem;">Machine Learning</h3>
                     <div class="skills-tags">
                         <span class="skill-tag">YOLOv8</span>
                         <span class="skill-tag">Computer Vision</span>
                     </div>
                 </div>
                 
-                <div class="skills-category card">
-                    <h3 class="card-title">Tools</h3>
+                <div class="skills-category">
+                    <h3 class="card-title" style="margin-bottom: 1rem;">Tools</h3>
                     <div class="skills-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
@@ -228,8 +225,8 @@
                     </div>
                 </div>
 
-                <div class="skills-category card">
-                    <h3 class="card-title">Core CS</h3>
+                <div class="skills-category">
+                    <h3 class="card-title" style="margin-bottom: 1rem;">Core CS</h3>
                     <div class="skills-tags">
                         <span class="skill-tag">DSA</span>
                         <span class="skill-tag">DBMS</span>
@@ -243,6 +240,7 @@
     </section>
 
     <section id="projects" class="projects-section">
+        <hr class="section-divider" style="width: 80%; margin: 0 auto; border: 0; height: 1px; background: rgba(255, 255, 255, 0.5);">
         <div class="section-container">
             <div class="section-header scroll-reveal">
                 <h2 class="section-title">Featured Projects</h2>
@@ -322,6 +320,7 @@
     </section>
 
     <section id="resume" class="resume-section">
+        <hr class="section-divider" style="width: 80%; margin: 0 auto; border: 0; height: 1px; background: rgba(255, 255, 255, 0.5);">
         <div class="section-container">
             <div class="section-header scroll-reveal">
                 <h2 class="section-title">Resume</h2>
@@ -329,58 +328,42 @@
             
             <div class="resume-content card scroll-reveal">
                 <div class="resume-viewer">
-                    <object data="venkataramaiah_resume.pdf" type="application/pdf" width="100%" height="600px">
+                    <object data="venkataramaiah_resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="800px" style="pointer-events: none;">
                         <p>Your browser doesn't have a PDF plugin. Instead you can <a href="venkataramaiah_resume.pdf" download style="color: var(--accent);">click here to download the PDF file.</a></p>
                     </object>
                 </div>
                 
                 <div class="resume-actions">
                     <a href="venkataramaiah_resume.pdf" download="Venkata_Ramaiah_Marupudi_Resume.pdf" class="btn-primary">
-                        <span class="icon">📄</span> Download Resume
+                        Download Resume
                     </a>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact" class="contact-section">
+        <hr class="section-divider" style="width: 80%; margin: 0 auto; border: 0; height: 1px; background: rgba(255, 255, 255, 0.5);">
         <div class="section-container">
             <div class="section-header scroll-reveal">
                 <h2 class="section-title">Get In Touch</h2>
             </div>
             
             <div class="contact-content scroll-reveal">
-                <div class="contact-cards">
-                    <div class="contact-card card">
-                        <div class="contact-icon">📞</div>
-                        <h3>Phone</h3>
-                        <p><a href="tel:+919908254988">+91 9908254988</a></p>
-                    </div>
-
-                    <div class="contact-card card">
-                        <div class="contact-icon">📧</div>
-                        <h3>Personal Email</h3>
-                        <p><a href="mailto:ramaiah5496@gmail.com">ramaiah5496@gmail.com</a></p>
-                    </div>
-
-                    <div class="contact-card card">
-                        <div class="contact-icon">🎓</div>
-                        <h3>University Email</h3>
-                        <p><a href="mailto:23bq1a05n8@vvit.net">23bq1a05n8@vvit.net</a></p>
-                    </div>
-
-                    <div class="contact-card card">
-                        <div class="contact-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>Ponnur, Guntur District, AP</p>
-                    </div>
+                <div class="contact-cards card" style="display: block; padding: 2rem;">
+                    <ul style="list-style-type: disc; margin-left: 2rem; color: var(--text-secondary); font-size: 1.1rem; line-height: 2;">
+                        <li><strong>Phone:</strong> <a href="tel:+919908254988" style="color: var(--accent); text-decoration: none;">+91 9908254988</a></li>
+                        <li><strong>Personal Email:</strong> <a href="mailto:ramaiah5496@gmail.com" style="color: var(--accent); text-decoration: none;">ramaiah5496@gmail.com</a></li>
+                        <li><strong>University Email:</strong> <a href="mailto:23bq1a05n8@vvit.net" style="color: var(--accent); text-decoration: none;">23bq1a05n8@vvit.net</a></li>
+                        <li><strong>Location:</strong> Ponnur, Guntur District, AP</li>
+                    </ul>
                 </div>
 
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/venkataramaiahmarupudi" target="_blank" class="social-btn">
-                        <span class="social-icon">💼</span> LinkedIn
+                        LinkedIn
                     </a>
                     <a href="https://github.com/MVRAMAIAH" target="_blank" class="social-btn">
-                        <span class="social-icon">💻</span> GitHub
+                        GitHub
                     </a>
                 </div>
             </div>

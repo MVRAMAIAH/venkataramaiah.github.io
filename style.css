@@ -124,13 +124,13 @@ body {
     border-radius: 50%;
     padding: 5px;
     background: linear-gradient(135deg, var(--accent), var(--hover-accent));
-    box-shadow: 0 0 40px rgba(0, 245, 212, 0.3);
+    box-shadow: 0 0 20px rgba(0, 245, 212, 0.15);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .image-container:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 50px rgba(0, 217, 255, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 217, 255, 0.2);
 }
 
 .profile-image {
@@ -259,8 +259,16 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .about-text p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.8;
     color: var(--text-secondary);
 }
 
@@ -270,8 +278,8 @@ body {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
 }
 
 .card-title {
@@ -532,6 +540,7 @@ body {
     gap: 0.8rem;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: auto;
 }
 
 .project-tech span {
