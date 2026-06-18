@@ -541,6 +541,8 @@ body {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     margin-top: auto;
+    min-height: 85px;
+    align-content: flex-start;
 }
 
 .project-tech span {
