@@ -83,7 +83,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(90deg, var(--accent), var(--hover-accent));
+    background: var(--accent), var(--hover-accent));
     transition: width 0.3s ease;
     border-radius: 2px;
 }
@@ -121,7 +121,7 @@ body {
     margin-bottom: 2.5rem;
     border-radius: 50%;
     padding: 5px;
-    background: linear-gradient(135deg, var(--accent), var(--hover-accent));
+    background: var(--accent), var(--hover-accent));
     box-shadow: 0 0 20px rgba(37, 99, 235, 0.15);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -169,7 +169,7 @@ body {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--hover-accent));
+    background: var(--accent), var(--hover-accent));
 }
 
 .hero-intro:hover {
@@ -237,7 +237,7 @@ body {
     height: 4px;
     bottom: 0;
     left: 20%;
-    background: linear-gradient(90deg, var(--accent), var(--hover-accent));
+    background: var(--accent), var(--hover-accent));
     border-radius: 2px;
 }
 
@@ -582,7 +582,7 @@ body {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem 2.5rem;
-    background: linear-gradient(135deg, var(--accent), var(--hover-accent));
+    background: var(--accent), var(--hover-accent));
     color: var(--bg-color);
     font-size: 1.1rem;
     font-weight: 700;
@@ -674,7 +674,7 @@ body {
 }
 
 .social-btn:hover {
-    background: linear-gradient(135deg, var(--accent), var(--hover-accent));
+    background: var(--accent), var(--hover-accent));
     color: var(--bg-color);
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
