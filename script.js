@@ -34,4 +34,34 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => {
         revealObserver.observe(el);
     });
+
+    // Fetch LeetCode Stats dynamically
+    async function fetchLeetCodeStats() {
+        const username = 'fb1dKeCGeH';
+        const url = `https://alfa-leetcode-api.onrender.com/${username}/solved`;
+        
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('Network response was not ok');
+            const data = await response.json();
+            
+            if (data.solvedProblem !== undefined) {
+                document.getElementById('lc-solved').textContent = data.solvedProblem;
+                // Calculate progress based on a goal of 300 problems
+                const goal = 300;
+                const percentage = Math.min((data.solvedProblem / goal) * 100, 100);
+                
+                // Animate width after a slight delay for better effect
+                setTimeout(() => {
+                    document.getElementById('lc-progress-fill').style.width = `${percentage}%`;
+                }, 500);
+            }
+        } catch (error) {
+            console.error('Error fetching LeetCode stats:', error);
+            document.getElementById('lc-solved').textContent = '75+'; // Fallback
+            document.getElementById('lc-progress-fill').style.width = '25%'; // Fallback
+        }
+    }
+
+    fetchLeetCodeStats();
 });

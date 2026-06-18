@@ -99,9 +99,21 @@
                                 <span class="focus-icon">🧠</span>
                                 <p>Learning Machine Learning deeper</p>
                             </li>
-                            <li>
-                                <span class="focus-icon">💻</span>
-                                <p>Solving problems on LeetCode</p>
+                            <li class="leetcode-stats-item" style="align-items: flex-start;">
+                                <span class="focus-icon" style="margin-top: 5px;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 24px; filter: invert(0.8) sepia(1) saturate(5) hue-rotate(320deg);">
+                                </span>
+                                <div class="leetcode-info" style="width: 100%;">
+                                    <p style="margin-bottom: 8px;"><a href="https://leetcode.com/u/fb1dKeCGeH/" target="_blank" style="color: var(--text-primary); text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-primary)'">LeetCode Problem Solving ↗</a></p>
+                                    <div class="lc-progress-container">
+                                        <div class="lc-stats" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 5px;">
+                                            <span id="lc-solved" style="color: #FFA116; font-weight: bold;">Loading...</span> problems solved
+                                        </div>
+                                        <div class="lc-progress-bar" style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                                            <div id="lc-progress-fill" class="lc-progress-fill" style="height: 100%; width: 0%; background: #FFA116; border-radius: 4px; transition: width 1s ease-in-out;"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li>
                                 <span class="focus-icon">🚀</span>
