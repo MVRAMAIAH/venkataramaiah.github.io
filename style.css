@@ -688,7 +688,7 @@ body {
 /* Responsive Design */
 @media (max-width: 900px) {
     .nav-links {
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .hero-name {
         font-size: 3rem;
@@ -702,8 +702,18 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
     .nav-links {
-        display: none; /* Add a hamburger menu later for mobile */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
     }
     .hero-name {
         font-size: 2.5rem;
@@ -719,10 +729,31 @@ body {
     .section-title {
         font-size: 2.2rem;
     }
-    .about-section {
+    .about-section, .certificates-section, .skills-section, .projects-section, .resume-section, .contact-section {
         padding: 60px 1.5rem;
     }
     .card {
         padding: 1.5rem;
+    }
+    .resume-viewer object {
+        height: 400px;
+    }
+    .leetcode-stats-item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: 2rem;
+    }
+    .certificates-grid, .skills-content, .projects-grid, .contact-cards {
+        grid-template-columns: 1fr;
+    }
+    .social-links {
+        flex-direction: column;
+    }
+    .social-btn {
+        justify-content: center;
     }
 }
