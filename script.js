@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
-            navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+            navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
         } else {
             navbar.style.boxShadow = 'none';
-            navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.85)';
+            navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.85)';
         }
     });
 
